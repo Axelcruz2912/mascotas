@@ -5,7 +5,7 @@ const App = () => {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    fetch('http://18.217.210.136/mascotas')
+    fetch('/mascotas')
       .then(response => response.json())
       .then(data => {
         console.log("Datos recibidos:", data); // 👈 Agregado para depurar
